@@ -1,0 +1,190 @@
+.adventures .main-btn {
+  background-color: var(--yellow-color);
+  border-radius: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.adventures .main-btn.more {
+  font-size: 25px;
+}
+
+.adventures .adventure-card {
+  height: 430px;
+}
+
+.adventures .adventure-card img {
+  width: calc((100% / 7) * 3);
+  height: 100%;
+}
+
+.adventures .adventure-card .adventure-desc {
+  max-width: calc((100% / 7) * 4);
+  height: 100%;
+}
+
+.adventures .adventure-card .adventure-desc h2 {
+  font-weight: 600;
+  font-size: 47px;
+}
+
+.adventures .adventure-card .adventure-desc p {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: justify;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  overscroll-behavior: auto;
+  height: calc(100% - 57px);
+  padding-bottom: 20px;
+}
+
+/* Start Odd */
+
+.adventures .adventure-card:nth-child(odd) .adventure-desc p::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.adventures .adventure-card:nth-child(odd) .adventure-desc p::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.adventures .adventure-card:nth-child(odd) {
+  background-color: var(--dark-color);
+  color: #fff;
+  padding-right: 10px;
+}
+
+.adventures .adventure-card:nth-child(odd) p {
+  padding-right: 140px;
+}
+
+.adventures .adventure-card:nth-child(odd) h2 {
+  color: var(--yellow-color);
+}
+
+/* End Odd */
+
+/* Start Even */
+.adventures .adventure-card:nth-child(even) .adventure-desc p::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.adventures .adventure-card:nth-child(even) .adventure-desc p::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.adventures .adventure-card:nth-child(even) {
+  background-color: #fff;
+  color: #000;
+}
+
+.adventures .adventure-card:nth-child(even) h2,
+.adventures .adventure-card:nth-child(even) p {
+  padding-left: 140px;
+  padding-right: 10px;
+}
+
+.adventures .all-adventures .adventure-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* End Even */
+
+@media (max-width: 1199px) {
+  .adventures .adventure-card {
+    height: 310px;
+  }
+
+  .adventures .adventure-card:nth-child(odd) p {
+    padding-right: 80px;
+  }
+
+  .adventures .adventure-card:nth-child(even) h2,
+  .adventures .adventure-card:nth-child(even) p {
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  .adventures .adventure-card {
+    height: 230px;
+  }
+
+  .adventures .adventure-card .adventure-desc h2 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .adventures .adventure-card:nth-child(odd) p {
+    padding-right: 30px;
+  }
+
+  .adventures .adventure-card:nth-child(even) h2,
+  .adventures .adventure-card:nth-child(even) p {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .adventures .adventure-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .adventures .adventure-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .adventures .adventure-card .adventure-desc {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .adventures .adventure-card .adventure-desc p,
+  .adventures .adventure-card .adventure-desc h2 {
+    margin: 10px 20px;
+  }
+
+  .adventures .adventure-card:nth-child(odd) {
+    background-color: #fff;
+    color: #000;
+    padding: 0;
+  }
+
+  .adventures .adventure-card:nth-child(odd) .adventure-desc {
+    background-color: var(--dark-color);
+    color: #fff;
+  }
+
+  .adventures .adventure-card:nth-child(odd) .adventure-desc p {
+    padding-right: 0;
+  }
+
+  .adventures .all-adventures .adventure-card:nth-child(even) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .adventures .adventure-card:nth-child(even) h2,
+  .adventures .adventure-card:nth-child(even) p {
+    padding: 10px;
+  }
+
+  .adventures .main-btn {
+    font-size: 15px;
+  }
+  
+  .adventures .main-btn.more{
+    font-size: 10px;
+  }
+}

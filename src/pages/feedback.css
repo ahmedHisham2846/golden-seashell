@@ -1,0 +1,100 @@
+.feedback .feedback-order * {
+  font-weight: 500;
+  font-size: 25px;
+  width: 255px;
+  height: 75px;
+}
+
+.feedback .feedback-order select {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.feedback .feedback-card {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+  width: 525px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1199px) {
+  .feedback .feedback-card {
+    width: 425px;
+  }
+}
+
+@media (max-width: 991px) {
+  .feedback .feedback-card {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.feedback .feedback-card .starts .i {
+  color: #fff;
+}
+
+.feedback .feedback-card h2 {
+  font-weight: 500;
+  font-size: 35px;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .feedback .feedback-card {
+    width: 100%;
+  }
+
+  .feedback .feedback-card h2{
+    font-size: 25px;
+  }
+}
+
+.feedback .feedback-card .rate-comment::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.feedback .feedback-card .rate-comment::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.feedback .feedback-card .rate-comment {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: right;
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: auto;
+  padding-right: 10px;
+}
+
+.feedback .feedback-card .rate-section {
+  position: relative;
+}
+
+.feedback .feedback-card .rate-section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100px;
+  width: 200%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.feedback .buttons a {
+  background-color: var(--yellow-color);
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+  padding: 15px 20px;
+  min-width: 255px;
+  border-radius: 20px;
+}

@@ -1,0 +1,23 @@
+
+/* 
+  1- variables and globels
+*/
+:root {
+  --yellow-color: #edd68b;
+  --dark-color: #0d1119;
+  --gold-color: #ccac61;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+.main-btn {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+/* End globels */
+/* ====================================== */

@@ -1,0 +1,75 @@
+/*
+  4- about us
+*/
+.about {
+  background-color: var(--content-color);
+}
+
+.about .left-side h1 {
+  font-size: 50px;
+  font-weight: 550;
+}
+
+.about .left-side h1 span {
+  color: var(--gold-color);
+}
+
+.about .left-side p {
+  font-size: 25px;
+  text-align: justify;
+}
+
+.about .left-side .more {
+  background-color: var(--yellow-color);
+  position: relative;
+  left: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  color: #000;
+}
+
+.about .right-side {
+  position: relative;
+  max-width: 450px;
+  min-height: 375px;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .about .left-side p {
+    font-size: 17px;
+  }
+
+  .about .left-side h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .about .right-side {
+    min-height: 330px;
+  }
+}
+
+.about .right-side img:first-child {
+  position: absolute;
+  width: 70%;
+  top: 0;
+  right: 10px;
+}
+
+.about .right-side img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .about .row {
+    flex-direction: column;
+  }
+}
+
+/* ====================================== */
+/* End about us */

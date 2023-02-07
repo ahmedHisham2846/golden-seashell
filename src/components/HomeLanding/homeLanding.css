@@ -1,0 +1,74 @@
+/* 
+  3- landing
+*/
+.landing.home-landing {
+  background-image: url("../../imgs/landing-home.png");
+}
+
+.landing {
+  height: 485px;
+  background-size: cover;
+}
+
+.landing .intro-text h1 {
+  font-size: 110px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.landing .intro-text p {
+  font-size: 19.2158px;
+  line-height: 1.7;
+  max-width: 560px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1200px) {
+  .landing .intro-text h1 {
+    font-size: 70px;
+  }
+
+  .landing .intro-text p {
+    font-size: 15px;
+    max-width: 440px;
+  }
+
+  .navbar .big-sign-in-up {
+    display: none;
+  }
+
+  .navbar .small-sign-in-up {
+    display: inline-block;
+  }
+
+  .navbar .small-sign-in-up .icon {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing {
+    height: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing .intro-text h1 {
+    font-size: 50px;
+  }
+
+  .landing .intro-text p {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 477px) {
+  .landing {
+    height: calc(100vh - 200px);
+  }
+}
+
+/* ====================================== */
+/* End landing */

@@ -1,0 +1,94 @@
+.signp-up-in .sign-card {
+  background-color: #F5F5F5;
+  position: relative;
+  padding: 100px 30px 40px 30px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 53px;
+  overflow: hidden;
+}
+
+.signp-up-in .sign-card h1 {
+  background-color: var(--yellow-color);
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.signp-up-in .sign-card .field .field-title {
+  display: block;
+}
+
+.signp-up-in .sign-card .forget,
+.signp-up-in .sign-card .field .agree,
+.signp-up-in .sign-card .field .field-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 760px) {
+  .signp-up-in .sign-card .forget,
+  .signp-up-in .sign-card .field .agree,
+  .signp-up-in .sign-card .field .field-title {
+    font-size: 15px;
+  }
+}
+
+.signp-up-in .sign-card .field input[type="email"],
+.signp-up-in .sign-card .field input[type="text"] {
+  width: 525px;
+  height: 40px;
+}
+
+@media (max-width: 700px) {
+  .signp-up-in .sign-card {
+    width: 100%;
+  }
+
+  .signp-up-in .sign-card .field input[type="email"],
+  .signp-up-in .sign-card .field input[type="text"] {
+    width: 100%;
+    height: 40px;
+  }
+}
+
+.signp-up-in .sign-card input[type="submit"] {
+  width: 345px;
+  background-color: var(--yellow-color);
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.signp-up-in h4 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+@media (max-width: 450px) {
+  .signp-up-in .sign-card input[type="submit"] {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .signp-up-in h4 {
+    font-size: 18px;
+  }
+}
+
+.signp-up-in h4 a {
+  color: var(--gold-color);
+}
+
+.signp-up-in .sign-card .forget {
+  position: relative;
+  margin-left: auto;
+}

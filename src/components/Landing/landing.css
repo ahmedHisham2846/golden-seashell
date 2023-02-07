@@ -1,0 +1,62 @@
+
+/* 
+  3- landing
+*/
+.landing {
+  height: 485px;
+  background-image: url("../../imgs/landing.png");
+  background-size: cover;
+}
+
+.landing .intro-text h1 {
+  font-size: 110px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .landing .intro-text h1 {
+    font-size: 70px;
+  }
+
+  .navbar .big-sign-in-up {
+    display: none;
+  }
+
+  .navbar .small-sign-in-up {
+    display: inline-block;
+  }
+
+  .navbar .small-sign-in-up .icon {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing {
+    height: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing .intro-text h1 {
+    font-size: 50px;
+  }
+
+  .landing .intro-text p {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 477px) {
+  .landing {
+    height: calc(100vh - 200px);
+  }
+
+  .landing .intro-text h1 {
+    font-size: 35px;
+  }
+}
+
+/* ====================================== */
+/* End landing */

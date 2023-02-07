@@ -1,0 +1,1 @@
+This is my first frontend web project, I have been commissioned by Golden Seashell company to redesign their website

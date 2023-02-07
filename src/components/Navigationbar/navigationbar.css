@@ -1,0 +1,187 @@
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  transition: 0.3s;
+}
+
+header.my-stiky {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0;
+}
+
+header .nav-content {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+header .logo {
+  width: 80px;
+  overflow: hidden;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .nav-bar {
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  padding-top: 10px;
+}
+
+header .nav-bar ul {
+  display: flex;
+}
+
+header .nav-bar ul li a {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 25px;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+header .nav-bar ul li a:hover {
+  background-color: var(--dark-color);
+  color: #fff;
+  border-radius: 20px;
+}
+
+header .nav-bar ul li a.active {
+  color: var(--gold-color);
+}
+
+header .right-side {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 265px;
+}
+
+header .right-side .hamburger {
+  display: none;
+  padding: 10px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+header .right-side .hamburger span {
+  height: 3px;
+  width: 20px;
+  background-color: #fff;
+  display: block;
+  margin: 5px;
+}
+
+header .right-side .sign-log a:nth-child(1) .i {
+  margin-right: 100px;
+}
+
+header .right-side .sign-log .i {
+  padding: 10px 10px;
+  background-color: var(--gold-color);
+}
+
+header .right-side .sign-log a {
+  position: relative;
+}
+
+header .right-side .sign-log a::before {
+  content: '';
+  position: absolute;
+  background-color: var(--dark-color);
+  width: 80px;
+  height: calc(100% + 17px);
+  left: -80px;
+  bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+header .right-side .sign-log a.sign::before {
+  content: 'Signup';
+}
+
+header .right-side .sign-log a.log::before {
+  content: 'Login';
+}
+
+@media (max-width: 1200px) {
+  header .nav-bar ul li a {
+    padding: 10px 15px;
+  }
+
+  header .right-side {
+    width: 100px;
+  }
+
+  header .right-side .sign-log a:nth-child(1) .i {
+    margin-right: 20px;
+  }
+
+  header .right-side .sign-log a::before {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  header .right-side .hamburger {
+    display: block;
+    z-index: 99999;
+  }
+
+  header .right-side {
+    width: 150px;
+  }
+
+  header .right-side .sign-log a:nth-child(1) .i {
+    margin-right: 10px;
+  }
+
+  header .nav-bar {
+    padding: 0;
+    transition: 0.5s;
+    top: 53px;
+    left: 0;
+    width: 100vw;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 0;
+  }
+
+  header .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    text-align: left;
+    transition: 0.5s;
+    width: 100%;
+    opacity: 0;
+  }
+
+  header .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+}
+
+header .nav-bar.active{
+  height: 325px;
+}
+
+header .nav-bar.active ul{
+  opacity: 1;
+}

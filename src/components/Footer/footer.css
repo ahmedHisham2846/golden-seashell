@@ -1,0 +1,91 @@
+/* 
+  7- footer
+*/
+.footer {
+  background-color: var(--dark-color);
+}
+
+.big-footer h5 {
+  font-weight: 520;
+  font-size: 25px;
+}
+
+.footer .links h5 {
+  color: var(--yellow-color);
+}
+
+.footer .links .site-links {
+  color: var(--yellow-color);
+}
+
+.footer .contact li {
+  color: #fff;
+}
+
+.footer .contact li {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+}
+
+.small-footer h5 {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.small-footer .contact li {
+  font-size: 10px;
+}
+
+.footer .contact .i {
+  color: var(--yellow-color);
+  width: 20px;
+  margin-right: 5px;
+}
+
+.footer hr {
+  height: 3px;
+  width: calc(100% - 100px);
+  background-color: #fff;
+  opacity: 1;
+}
+
+.small-footer {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .big-footer {
+    display: none;
+  }
+
+  .small-footer {
+    display: block;
+  }
+}
+
+/* ====================================== */
+/* End footer */
+
+/*
+  8- copy-right
+*/
+.copy-right {
+  width: 100%;
+  background-color: var(--yellow-color);
+}
+
+.copy-right p {
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .copy-right p {
+    font-size: 10px;
+  }
+}
+/* ====================================== */
+/* End copy-right */

@@ -1,0 +1,144 @@
+.contactp .contact-card,
+.contactp .contact-all-data {
+  background-color: var(--dark-color);
+  width: 525px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.contactp .contact-card h4,
+.contactp .contact-all-data h4 {
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.contactp .contact-card form * {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contactp .contact-card form textarea,
+.contactp .contact-card form input[type="text"],
+.contactp .contact-card form input[type="email"] {
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+}
+
+.contactp .contact-card form textarea::-webkit-input-placeholder {
+  padding-top: 10px;
+}
+
+.contactp .contact-card form textarea::-webkit-input-placeholder,
+.contactp .contact-card form input[type="text"]::-webkit-input-placeholder,
+.contactp .contact-card form input[type="email"]::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contactp .contact-card form textarea {
+  height: 140px;
+}
+
+.contactp .contact-card form input[type="submit"] {
+  background-color: var(--yellow-color);
+  font-weight: 700;
+  font-size: 20px;
+  width: 165px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.contactp .contact-all-data .contact-data:not(:last-child) {
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.contactp .contact-all-data .contact-data .data-title {
+  color: var(--yellow-color);
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.contactp .contact-all-data .contact-data .metadata {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.contactp .contact-all-data .contact-data .metadata .i {
+  color: var(--yellow-color);
+}
+
+.contactp .contact-all-data .contact-data .brands .i {
+  font-size: 25px;
+}
+
+.contactp .person-card {
+  width: 325px;
+  background-color: var(--dark-color);
+  border-radius: 20px;
+  position: relative;
+  padding: 150px 20px 20px;
+}
+
+@media (max-width: 767px) {
+  .contactp .contact-content {
+    flex-direction: column;
+  }
+
+  .contactp .contact-card,
+  .contactp .contact-all-data {
+    width: 100%;
+  }
+
+  .contactp .contact-card h4,
+  .contactp .contact-all-data h4 {
+    font-size: 30px;
+  }
+
+  .contactp .person-card {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.contactp .person-card::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25%;
+}
+
+.contactp .person-card h3 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.contactp .person-card .person-position {
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--yellow-color);
+  margin-bottom: 10px;
+}
+
+.contactp .end-text{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+@media (max-width: 515px) {
+  .contactp .end-text h4{
+    font-size: 15px;
+  }
+}
