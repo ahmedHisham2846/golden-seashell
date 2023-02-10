@@ -18,7 +18,7 @@ const SignUp = () => {
         <div className="container">
           <div className="d-flex justify-content-center align-items-center flex-column gap-5">
             <form className="sign-card text-black d-flex flex-column gap-4">
-              <h1 className="text-center">Sing up</h1>
+              <h1 className="text-center">Sign up</h1>
               <div className="field">
                 <label className="field-title" htmlFor="txtName">
                   Name

@@ -14,6 +14,7 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import Feedback from "./pages/Feedback";
 import Adventure from "./pages/Adventure";
+import GiveFeedback from "./pages/GiveFeedback";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/adventure",
     element: <Adventure />,
+  },
+  {
+    path: "/giveFeedback",
+    element: <GiveFeedback />,
   },
 ]);
 

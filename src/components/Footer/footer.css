@@ -14,21 +14,22 @@
   color: var(--yellow-color);
 }
 
-.footer .links .site-links {
+.footer .links .site-links li a {
   color: var(--yellow-color);
 }
 
 .footer .contact li {
   color: #fff;
-}
-
-.footer .contact li {
   display: flex;
   flex-direction: row;
   padding-top: 5px;
   justify-content: flex-start;
   align-items: center;
   height: auto;
+}
+
+.small-footer h5.col-12 {
+  font-size: 20px;
 }
 
 .small-footer h5 {

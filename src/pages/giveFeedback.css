@@ -1,0 +1,44 @@
+.give-feedback .give-card{
+  background-color: var(--dark-color);
+  border-radius: 20px;
+}
+
+.give-feedback .give-card input[type="text"]{
+  height: 50px;
+  padding: 0 10px;
+}
+.give-feedback .give-card input[type="text"],
+.give-feedback .give-card textarea{
+  width: 607px;
+  border: none;
+  outline: none;
+}
+
+.give-feedback .give-card textarea{
+  height: 196px;
+}
+
+.give-feedback .give-card input[type="submit"]{
+  width: 345px;
+  height: 50px;
+  font-weight: 650;
+  font-size: 25px;
+  background-color: var(--yellow-color);
+}
+
+.give-feedback .give-card .rate-us{
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.give-feedback .give-card .rate-us .starts * {
+  cursor: pointer;
+}
+
+.give-feedback .give-card .rate-us .starts *:hover{
+  color: var(--gold-color);
+}
+
+.yellow-star{
+  color: var(--yellow-color);
+}

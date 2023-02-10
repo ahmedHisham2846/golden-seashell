@@ -1,5 +1,6 @@
 import "./footer.css";
 import Logo from "../../imgs/Logo.png";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -53,12 +54,36 @@ const Footer = () => {
               <div className="links">
                 <h5 className="text-light">Links</h5>
                 <ul className="site-links list-unstyled lh-lg">
-                  <li>HOME</li>
-                  <li>ABOUT US</li>
-                  <li>DESTINAYURE</li>
-                  <li>ADVENTURE</li>
-                  <li>FEEDBACK</li>
-                  <li>CONTACT US</li>
+                  <li>
+                    <Link className="text-decoration-none" to="/">
+                      HOME
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="text-decoration-none" to="/about">
+                      ABOUT US
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="text-decoration-none" to="/destination">
+                      DESTINATION
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="text-decoration-none" to="/adventure">
+                      ADVENTURE
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="text-decoration-none" to="/feedback">
+                      FEEDBACK
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="text-decoration-none" to="/contact">
+                      CONTACT US
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -71,7 +96,12 @@ const Footer = () => {
                       className="text-center i p-2 rounded-circle"
                       icon={faPhone}
                     />
+                    <a
+                      href="tel:+95699926676"
+                      className="text-white text-decoration-none"
+                    >
                     +956 99926676
+                    </a>
                   </li>
                   <li>
                     <FontAwesomeIcon
@@ -109,12 +139,36 @@ const Footer = () => {
             <h5 className="text-light col-12 text-center">Links</h5>
             <div className="links col-12">
               <ul className="site-links list-unstyled lh-lg row">
-                <li className="col-4">HOME</li>
-                <li className="col-4">ABOUT US</li>
-                <li className="col-4">DESTINAYURE</li>
-                <li className="col-4">ADVENTURE</li>
-                <li className="col-4">FEEDBACK</li>
-                <li className="col-4">CONTACT US</li>
+                <li className="col-4">
+                  <Link className="text-decoration-none" to="/">
+                    HOME
+                  </Link>
+                </li>
+                <li className="col-4">
+                  <Link className="text-decoration-none" to="/about">
+                    ABOUT US
+                  </Link>
+                </li>
+                <li className="col-4">
+                  <Link className="text-decoration-none" to="/destination">
+                    DESTINATION
+                  </Link>
+                </li>
+                <li className="col-4">
+                  <Link className="text-decoration-none" to="/adventure">
+                    ADVENTURE
+                  </Link>
+                </li>
+                <li className="col-4">
+                  <Link className="text-decoration-none" to="/feedback">
+                    FEEDBACK
+                  </Link>
+                </li>
+                <li className="col-4">
+                  <Link className="text-decoration-none" to="/contact">
+                    CONTACT US
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="container">

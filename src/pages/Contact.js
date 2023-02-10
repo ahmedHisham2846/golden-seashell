@@ -2,8 +2,8 @@ import "./contact.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 //Images
-import saudiArabia from "../imgs/contact-saudiArabia.png"
-import kuwait from "../imgs/contact-kuwait.png"
+import saudiArabia from "../imgs/contact-saudiArabia.png";
+import kuwait from "../imgs/contact-kuwait.png";
 // Components
 import Navigationbar from "../components/Navigationbar/Navigationbar";
 import Landing from "../components/Landing/Landing";
@@ -21,14 +21,13 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 const Contact = () => {
   return (
     <>
-    <Helmet>
-      <title>Contact Us</title>
-    </Helmet>
-    <Navigationbar/>
-    <Landing landingTitle="CONTACT GOLDEN SEASHELL" />
+      <Helmet>
+        <title>Contact Us</title>
+      </Helmet>
+      <Navigationbar />
+      <Landing landingTitle="CONTACT GOLDEN SEASHELL" />
       <div className="contactp mt-5">
         <div className="container">
-
           <div className="contact-content d-flex gap-3  justify-content-lg-between mb-5">
             <div className="contact-card">
               <h4 className="text-white text-center mb-4">send us a message</h4>
@@ -104,37 +103,40 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
           </div>
 
           <div className="contact-content d-flex gap-5 justify-content-lg-between pt-5 mb-5">
             <div className="person-card text-center text-white mt-5">
-              <h3>Ali Albattah</h3>
-              <div className="person-position">Co-Founder</div>
-              <img src={saudiArabia} alt="" />
+              <h3>Mohammad Awadh</h3>
+              <div className="person-position">
+                Chief Executive Officer (CEO)
+              </div>
+              <img src={kuwait} alt="" />
             </div>
-            
+
             <div className="person-card text-center text-white mt-5">
               <h3>Mohammed Derbas</h3>
               <div className="person-position">General Manager</div>
               <img src={kuwait} alt="" />
             </div>
-            
+
             <div className="person-card text-center text-white mt-5">
-              <h3>Mohammad Awadh</h3>
-              <div className="person-position">Chief Executive Officer (CEO)</div>
-              <img src={kuwait} alt="" />
+              <h3>Ali Albattah</h3>
+              <div className="person-position">Co-Founder</div>
+              <img src={saudiArabia} alt="" />
             </div>
           </div>
 
           <div className="main-btn text-center end-text mb-5">
-            <h4 className="text-white">Feel free to contact us about any inquiry</h4>
+            <h4 className="text-white">
+              Feel free to contact us about any inquiry
+            </h4>
             <h4>You can find us on the web and social media</h4>
           </div>
         </div>
       </div>
-      <Partners/>
-      <Footer/>
+      <Partners />
+      <Footer />
     </>
   );
 };

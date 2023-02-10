@@ -89,8 +89,8 @@
 
 .adventures .adventure-card:nth-child(even) h2,
 .adventures .adventure-card:nth-child(even) p {
-  padding-left: 140px;
-  padding-right: 10px;
+  padding-left: 120px;
+  padding-right: 30px;
 }
 
 .adventures .all-adventures .adventure-card:nth-child(even) {

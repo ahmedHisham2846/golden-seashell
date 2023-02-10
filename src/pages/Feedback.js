@@ -50,12 +50,11 @@ const Feedback = () => {
     <Landing landingTitle="feedback" />
       <div className="feedback mt-5">
         <div className="container">
-          <div className="feedback-order d-flex flex-column align-items-end">
+          <div className="feedback-order mb-3 d-flex flex-column align-items-end">
             <select className="text-center" name="order" id="order">
               <option value="Newest">Newest first</option>
               <option value="Oldest">Oldest first</option>
             </select>
-            <label className="text-center">Oldest first</label>
           </div>
 
           <div className="feedback-slider">
@@ -137,7 +136,7 @@ const Feedback = () => {
 
           <div className="buttons d-flex flex-lg-row flex-column justify-content-between ps-5 pe-5 mt-5 mb-5">
             <Link className="button mb-5 m-lg-0 text-center" to="/contact">Contact Us</Link>
-            <Link className="button text-center" to="#">Give Feedback</Link>
+            <Link className="button text-center" to="/giveFeedback">Give Feedback</Link>
           </div>
         </div>
       </div>

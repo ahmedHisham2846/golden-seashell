@@ -1,5 +1,6 @@
 import "./adventure.css";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 // Components
 import Navigationbar from "../components/Navigationbar/Navigationbar";
 import Landing from "../components/Landing/Landing";
@@ -161,7 +162,7 @@ const Adventure = () => {
             
           </div>
           
-          <div className="main-btn more mt-5 mb-5">VIEW MORE DISTENATIONS</div>
+          <Link to="/destination" className="main-btn more mt-5 mb-5 text-decoration-none">VIEW MORE DISTENATIONS</Link>
         </div>
       </div>
       <Footer/>

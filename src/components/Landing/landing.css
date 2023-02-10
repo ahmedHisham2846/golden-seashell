@@ -1,4 +1,3 @@
-
 /* 
   3- landing
 */
@@ -15,6 +14,10 @@
 }
 
 @media (max-width: 1200px) {
+  .landing {
+    background-image: url("../../imgs/md-landing.png");
+  }
+
   .landing .intro-text h1 {
     font-size: 70px;
   }
@@ -39,6 +42,10 @@
 }
 
 @media (max-width: 767px) {
+  .landing {
+    background-image: url("../../imgs/sm-landing.png");
+  }
+
   .landing .intro-text h1 {
     font-size: 50px;
   }
@@ -50,6 +57,7 @@
 
 @media (max-width: 477px) {
   .landing {
+    background-image: url("../../imgs/extra-sm-landing.png");
     height: calc(100vh - 200px);
   }
 
