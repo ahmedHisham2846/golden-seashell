@@ -9,26 +9,26 @@
 }
 
 @media (max-width: 776px) {
-  .destinationP h1{
+  .destinationP h1 {
     font-size: 25px;
   }
 }
 
-.destinationP h2{
+.destinationP h2 {
   font-weight: 600;
   font-size: 20px;
 }
 
-.destinationP .more-destinations{
+.destinationP .more-destinations {
   transition: 0.7s;
   overflow: hidden;
   height: 0;
 }
 
-.destinationP .more-destinations.open{
+.destinationP .more-destinations.open {
   height: fit-content;
 }
 
-.destinationP .view-more{
+.destinationP .view-more {
   cursor: pointer;
 }

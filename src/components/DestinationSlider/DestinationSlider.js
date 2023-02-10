@@ -17,7 +17,7 @@ const options = {
   loop: true,
   rtl: true,
   margin: 10,
-  nav: false,
+  nav: true,
   responsiveClass: true,
   autoplay: true,
   autoplayTimeout: 1500,

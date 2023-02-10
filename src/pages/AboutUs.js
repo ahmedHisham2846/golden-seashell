@@ -17,7 +17,7 @@ const AboutUs = () => {
       <title>About</title>
     </Helmet>
     <Navigationbar />
-    <Landing landingTitle="ABOUT" />
+    <Landing landingTitle="ABOUT us" />
       <div className="about-us pt-5 pb-5">
         <div className="container">
           <div className="what-we-do row justify-content-lg-start justify-content-center align-items-center">

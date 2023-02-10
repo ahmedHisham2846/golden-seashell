@@ -28,7 +28,7 @@ const Adventure = () => {
             {/* Mountains */}
             <div className="adventure-card d-flex justify-content-between align-items-start">
               <img src={mountains} alt="" />
-              <div className="adventure-desc pe-0 ps-0 ps-lg-5 pt-0 pt-lg-2">
+              <div className="adventure-desc pe-0 ps-lg-0 ps-lg-5 pt-0 pt-lg-2">
                 <h2>Mountains</h2>
                 <p>
                   Here are a bunch of reasons why people would very much like to

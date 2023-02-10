@@ -52,7 +52,7 @@ const Destination = () => {
           </h1>
 
           <div className="small-destination mb-5 mt-5">
-            <div className="row justify-content-start justify-content-lg-between">
+            <div className="row justify-content-start">
               <DestinationCard countyName="Maldives" image={maldives} />
               <DestinationCard countyName="Seychelles" image={seychelles} />
               <DestinationCard countyName="Mauritius" image={mauritius} />
@@ -86,7 +86,7 @@ const Destination = () => {
           <div
             className={`small-destination more-destinations ${openMoreDestinations} mb-5 mt-5`}
           >
-            <div className="row justify-content-start justify-content-lg-between">
+            <div className="row justify-content-start">
               <DestinationCard countyName="Dubai" image={dubai} />
               <DestinationCard countyName="Georgia" image={georgia} />
               <DestinationCard countyName="Kandy" image={kandy} />
