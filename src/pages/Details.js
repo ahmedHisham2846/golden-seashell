@@ -1,6 +1,7 @@
 import "./details.css";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop";
 // Components
 import Navigationbar from "../components/Navigationbar/Navigationbar";
 import Landing from "../components/Landing/Landing";
@@ -19,6 +20,7 @@ const Details = () => {
       <Helmet>
         <title>Destination Details</title>
       </Helmet>
+      <ScrollToTop />
       <Navigationbar />
       <Landing landingTitle={"DETAILS"} />
       <div className="country">

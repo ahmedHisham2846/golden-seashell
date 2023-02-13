@@ -13,7 +13,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <>
-      <div className="footer big-footer pt-5 pb-5 text-white-50 text-center text-md-start">
+      <div className="footer big-footer pt-3 text-white-50 text-center text-md-start">
         <div className="container">
           <div className="row justify-content-start align-items-center">
             <div className="col-md-6 col-lg-3">
@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer small-footer pt-5 pb-5">
+      <div className="footer small-footer pt-1 pb-0">
         <div className="container">
           <div className="row">
             <div className="col-4">

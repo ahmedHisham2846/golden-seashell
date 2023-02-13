@@ -20,7 +20,7 @@ const options = {
   nav: true,
   responsiveClass: true,
   autoplay: true,
-  autoplayTimeout: 1500,
+  autoplayTimeout: 2500,
   autoplayHoverPause: true,
   responsive: {
     0: {

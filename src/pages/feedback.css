@@ -14,9 +14,13 @@
 
 .feedback .feedback-card {
   background-color: var(--dark-color);
-  color: var(--yellow-color);
   width: 525px;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.feedback .feedback-card h2 {
+  color: var(--yellow-color);
 }
 
 @media (max-width: 1199px) {
@@ -33,10 +37,6 @@
   }
 }
 
-.feedback .feedback-card .starts .i {
-  color: #fff;
-}
-
 .feedback .feedback-card h2 {
   font-weight: 500;
   font-size: 35px;
@@ -48,7 +48,7 @@
     width: 100%;
   }
 
-  .feedback .feedback-card h2{
+  .feedback .feedback-card h2 {
     font-size: 25px;
   }
 }

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import ScrollToTop from "../components/ScrollToTop";
 import Navigationbar from "../components/Navigationbar/Navigationbar";
 import HomeLanding from "../components/HomeLanding/HomeLanding";
 import DestinationSlider from "../components/DestinationSlider/DestinationSlider";
@@ -18,12 +19,13 @@ const Home = () => {
       <Helmet>
         <title>Home</title>
       </Helmet>
+      <ScrollToTop />
       <Navigationbar />
       <HomeLanding landingTitle="GOLDEN SEASHELL" />
       <About />
-      <DestinationSlider/>
-      <Partners/>
-      <Footer/>
+      <DestinationSlider />
+      <Partners />
+      <Footer />
     </div>
   );
 };

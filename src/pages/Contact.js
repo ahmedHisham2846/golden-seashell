@@ -1,6 +1,7 @@
 import "./contact.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import ScrollToTop from "../components/ScrollToTop";
 //Images
 import saudiArabia from "../imgs/contact-saudiArabia.png";
 import kuwait from "../imgs/contact-kuwait.png";
@@ -24,6 +25,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us</title>
       </Helmet>
+      <ScrollToTop />
       <Navigationbar />
       <Landing landingTitle="CONTACT GOLDEN SEASHELL" />
       <div className="contactp mt-5">

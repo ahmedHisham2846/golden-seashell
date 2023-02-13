@@ -1,6 +1,7 @@
 import "./destination.css";
 import { Helmet } from "react-helmet-async";
 import React, { useState } from "react";
+import ScrollToTop from "../components/ScrollToTop";
 // Components
 import DestinationCard from "../components/DestinationCard/DestinationCard";
 import Navigationbar from "../components/Navigationbar/Navigationbar";
@@ -43,6 +44,7 @@ const Destination = () => {
       <Helmet>
         <title>Destinations</title>
       </Helmet>
+      <ScrollToTop />
       <Navigationbar />
       <Landing landingTitle="Destinations" />
       <div className="destinationP pt-5">

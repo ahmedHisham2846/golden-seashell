@@ -1,6 +1,7 @@
 import "./signUpIn.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import ScrollToTop from "../components/ScrollToTop";
 // Components
 import Navigationbar from "../components/Navigationbar/Navigationbar";
 import Landing from "../components/Landing/Landing";
@@ -9,9 +10,10 @@ import Footer from "../components/Footer/Footer";
 const SignUp = () => {
   return (
     <>
-    <Helmet>
-      <title>Login</title>
-    </Helmet>
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
+      <ScrollToTop />
       <Navigationbar />
       <Landing landingTitle="login" />
       <div className="signp-up-in mt-5 mb-5">

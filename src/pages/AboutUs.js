@@ -1,5 +1,6 @@
 import "./aboutUs.css";
 import { Helmet } from "react-helmet-async";
+import ScrollToTop from "../components/ScrollToTop";
 // Components
 import Navigationbar from "../components/Navigationbar/Navigationbar";
 import Landing from "../components/Landing/Landing";
@@ -16,6 +17,7 @@ const AboutUs = () => {
     <Helmet>
       <title>About</title>
     </Helmet>
+      <ScrollToTop />
     <Navigationbar />
     <Landing landingTitle="ABOUT us" />
       <div className="about-us pt-5 pb-5">

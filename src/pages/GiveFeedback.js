@@ -1,6 +1,7 @@
 import "./giveFeedback.css";
 import { Helmet } from "react-helmet-async";
 import React, { useState } from "react";
+import ScrollToTop from "../components/ScrollToTop";
 // Font Awesome Icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -17,6 +18,10 @@ const GiveFeedback = () => {
   const [ratedStart5, setRatedStart5] = useState("");
   return (
     <>
+      <Helmet>
+        <title>Give Feedback</title>
+      </Helmet>
+      <ScrollToTop />
       <Navigationbar />
       <Landing landingTitle="Give Feedback" />
       <div className="give-feedback d-flex justify-content-center align-items-center pt-5 pb-5 w-100">
